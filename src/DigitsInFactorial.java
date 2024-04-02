@@ -1,6 +1,6 @@
 public class DigitsInFactorial {
     public static void main(String[] args) {
-        digitsInFactorial(19);
+        System.out.println(digitsInFactorial(19));
     }
 
 
@@ -11,7 +11,7 @@ public class DigitsInFactorial {
         }
         int digitCount =0;
         for(int i =2; i<=N; i++){
-            digitCount += Math.log10(i);
+            digitCount += (int) Math.log10(i);
         }
 
         return (int) (Math.floor(digitCount)+1);
